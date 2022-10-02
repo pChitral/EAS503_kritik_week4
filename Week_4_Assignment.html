@@ -14579,7 +14579,8 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Week-4-Lecture-Review">Week 4 Lecture Review<a class="anchor-link" href="#Week-4-Lecture-Review">&#182;</a></h1><h2 id="Question-1">Question 1<a class="anchor-link" href="#Question-1">&#182;</a></h2><p>We covered list and dictionary comprehension. There are three variations of list/dictionary comprehension: no conditional, if conditional, and if/else conditional. Give simple examples where you do not use list/dictionary comprehension and then repeat the same examples with list/dictionary comprehension. There will be 12 examples in total -- 3 plain list example, 3 list comprehension examples, 3 plain dictionary examples, and 3 dictionary comprehensions examples.</p>
+<h1 id="Week-4-Lecture-Review">Week 4 Lecture Review<a class="anchor-link" href="#Week-4-Lecture-Review">&#182;</a></h1><hr>
+<h2 id="Question-1">Question 1<a class="anchor-link" href="#Question-1">&#182;</a></h2><p>We covered list and dictionary comprehension. There are three variations of list/dictionary comprehension: no conditional, if conditional, and if/else conditional. Give simple examples where you do not use list/dictionary comprehension and then repeat the same examples with list/dictionary comprehension. There will be 12 examples in total -- 3 plain list example, 3 list comprehension examples, 3 plain dictionary examples, and 3 dictionary comprehensions examples.</p>
 
 </div>
 </div>
@@ -15428,6 +15429,7 @@ This is our second output: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], which indeed is the 
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><br/></p>
 <h2 id="Question-2">Question 2<a class="anchor-link" href="#Question-2">&#182;</a></h2><p>A student comes to you and says that they used Python to simulate 10 coin tosses and got observed 7 heads and 3 tails. They tell you that something is wrong with Python. Are they correct? Explain in detail.</p>
 
 </div>
@@ -15458,6 +15460,7 @@ This is our second output: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], which indeed is the 
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><br/></p>
 <h2 id="Question-3">Question 3<a class="anchor-link" href="#Question-3">&#182;</a></h2><p>Explain the purpose of <code>continue</code> and <code>break</code> in looping.</p>
 <ul>
 <li>Both of them help us gain more control while we are looping and lets us fine tune our needs accordingly where the more formal term to acknowledge both is <em>control statement</em>.</li>
@@ -15642,6 +15645,7 @@ See you again in the next semester
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><br/></p>
 <h2 id="Question-4">Question 4<a class="anchor-link" href="#Question-4">&#182;</a></h2><p>Assume there is a csv file whose first line is the column headers and the rest of the rows are values. How can you use zip to create a list in which each element is a dictionary whose keys are the column headers and values are the values from the rows? Hint: I am asking you to basically explain the following code that we covered in lecture.</p>
 <div class="highlight"><pre><span></span><span class="n">filename</span> <span class="o">=</span> <span class="s1">&#39;people.tsv&#39;</span>
 
@@ -15675,24 +15679,28 @@ See you again in the next semester
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <ul>
-<li>filename holds the name of the file that we will open eventually by passing it as an input argument to the open function. </li>
+<li>filename holds the name of the file that we will open eventually by passing it as an input argument to the open function.</li>
 <li>Before we even get in the for loop we make sure that we've created an empty list called students and have set the header to none in order to set it correctly as soon as we read the first line in the for loop.</li>
-<li>This file is <code>.tsv</code> and not <code>.csv</code> which means that it isn't seperated by commas but is seperated by tab spaces. Thus, we'll make sure that we spit our lines on tab space. </li>
+<li>This file is <code>.tsv</code> and not <code>.csv</code> which means that it isn't seperated by commas but is seperated by tab spaces. Thus, we'll make sure that we spit our lines on tab space.</li>
 <li>Before we get in our code it is important that we understand what our end goal is. In other words, lets have a rough idea about how values will be stored in our <code>students</code> list.</li>
-<li>So, it is going to be a list with dictionaries as its values. In fact, every line in our <code>'people.tsv'</code> file will be stored as a dictionary value in our list. In conclusion, we expect to see a list of dictionaries where the index of the list corresponds the line number in our <code>'people.tsv'</code> file. </li>
-<li>Validations are the safety checks that a coder must perform before computing something with the data in order to prevent wastage of computation power and maintain data integrity. More ofen than not heavy validation code can be seen in the business logic of the application and usually sits in the backend. Thus, we also have done the same thing in our function where we check for some edge cases in order to prevent hazard in the functionality of our code. </li>
-<li>Following is our validation code that checks for a condition before we move ahead in every iteration in order to prevent errors <div class="highlight"><pre><span></span><span class="k">if</span> <span class="ow">not</span> <span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">():</span>
-              <span class="k">continue</span>
+<li>So, it is going to be a list with dictionaries as its values. In fact, every line in our <code>'people.tsv'</code> file will be stored as a dictionary value in our list. In conclusion, we expect to see a list of dictionaries where the index of the list corresponds the line number in our <code>'people.tsv'</code> file.</li>
+<li>Validations are the safety checks that a coder must perform before computing something with the data in order to prevent wastage of computation power and maintain data integrity. More ofen than not heavy validation code can be seen in the business logic of the application and usually sits in the backend. Thus, we also have done the same thing in our function where we check for some edge cases in order to prevent hazard in the functionality of our code.</li>
+<li>Following is our validation code that checks for a condition before we move ahead in every iteration in order to prevent errors</li>
+</ul>
+<div class="highlight"><pre><span></span><span class="k">if</span> <span class="ow">not</span> <span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">():</span>
+                <span class="k">continue</span>
 </pre></div>
-</li>
-<li>Once we are sure that the line ins't empty, next thing we do is set the <code>header</code> if the value is none. Actually, <code>Header</code> will be holding the keys of our dictionary that we'll be creating for every line in our <code>'people.tsv'</code> file. Furthermore, this is based on a very strong assumption that the first line in our file would be the having the attribute/column/feature names. Although the common consensus about the convention makes it a very safe assumption, but still it's better to explicitly state it at the onset itself to prevent any sort of misinterpretation. </li>
-<li>In addition, <code>continue</code> plays a pivotal role especially after we've assigned the header, because we don't want our header to be treated as the value, which the code below does. And more importantly we don't want the first value of our <code>students</code> list to have a dictionary that has same keys and same values. Thus, we make sure that we move on to the next iteration, since we've already accomplished the task for this one. <div class="highlight"><pre><span></span><span class="n">students</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">dict</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">header</span><span class="p">,</span><span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">&#39;</span><span class="p">))))</span>
+<ul>
+<li>Once we are sure that the line ins't empty, next thing we do is set the <code>header</code> if the value is none. Actually, <code>Header</code> will be holding the keys of our dictionary that we'll be creating for every line in our <code>'people.tsv'</code> file. Furthermore, this is based on a very strong assumption that the first line in our file would be the having the attribute/column/feature names. Although the common consensus about the convention makes it a very safe assumption, but still it's better to explicitly state it at the onset itself to prevent any sort of misinterpretation.</li>
+<li>In addition, <code>continue</code> plays a pivotal role especially after we've assigned the header, because we don't want our header to be treated as the value, which the code below does. And more importantly we don't want the first value of our <code>students</code> list to have a dictionary that has same keys and same values. Thus, we make sure that we move on to the next iteration, since we've already accomplished the task for this one.</li>
+</ul>
+<div class="highlight"><pre><span></span><span class="n">students</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">dict</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">header</span><span class="p">,</span><span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">&#39;</span><span class="p">))))</span>
 </pre></div>
-</li>
+<ul>
 <li>The aforementioned code block is nothing if not a well orchestrated symphony where there's lot of things happening in harmony. Lets start from inside. Here, <code>line.strip().split('\t')</code> will split our line everytime it encounters a tab space.</li>
-<li>Since we want a dictionary with key value pair sitting in our <code>students</code> list, we have to do something that assigns it in that fashion. Thus, to our rescue, we call <code>zip</code> where we pass in <code>header</code> and the value that was freshly cut by <code>.split</code>on tab spaces. </li>
-<li><code>dict</code> makes sure that we bind the output values thrown by our <code>zip</code> as key value pairs where <code>header</code> holds the keys and the output thrown by <code>line.strip().split('\t')</code>  holds the value for the respective header. </li>
-<li>Finally, we've got everything in the right place and have a <code>students</code> list that has all the key value paired dictionaries as its value and the information from the <code>people.tsv</code> file has been sucessfully transferred into a structued data type which enables us to peform a lot of operation using the readymade function that wouldn't have worked otherwise. </li>
+<li>Since we want a dictionary with key value pair sitting in our <code>students</code> list, we have to do something that assigns it in that fashion. Thus, to our rescue, we call <code>zip</code> where we pass in <code>header</code> and the value that was freshly cut by <code>.split</code>on tab spaces.</li>
+<li><code>dict</code> makes sure that we bind the output values thrown by our <code>zip</code> as key value pairs where <code>header</code> holds the keys and the output thrown by <code>line.strip().split('\t')</code> holds the value for the respective header.</li>
+<li>Finally, we've got everything in the right place and have a <code>students</code> list that has all the key value paired dictionaries as its value and the information from the <code>people.tsv</code> file has been sucessfully transferred into a structued data type which enables us to peform a lot of operation using the readymade function that wouldn't have worked otherwise.</li>
 </ul>
 
 </div>
