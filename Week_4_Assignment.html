@@ -14580,7 +14580,8 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h1 id="Week-4-Lecture-Review">Week 4 Lecture Review<a class="anchor-link" href="#Week-4-Lecture-Review">&#182;</a></h1><hr>
-<h2 id="Question-1">Question 1<a class="anchor-link" href="#Question-1">&#182;</a></h2><p>We covered list and dictionary comprehension. There are three variations of list/dictionary comprehension: no conditional, if conditional, and if/else conditional. Give simple examples where you do not use list/dictionary comprehension and then repeat the same examples with list/dictionary comprehension. There will be 12 examples in total -- 3 plain list example, 3 list comprehension examples, 3 plain dictionary examples, and 3 dictionary comprehensions examples.</p>
+<p><span style="color:grey; font-family:Lato; font-size:1.4em;"></p>
+<h2 id="Question-1">Question 1<a class="anchor-link" href="#Question-1">&#182;</a></h2><p><strong>We covered list and dictionary comprehension. There are three variations of list/dictionary comprehension: no conditional, if conditional, and if/else conditional. Give simple examples where you do not use list/dictionary comprehension and then repeat the same examples with list/dictionary comprehension. There will be 12 examples in total -- 3 plain list example, 3 list comprehension examples, 3 plain dictionary examples, and 3 dictionary comprehensions examples.</strong></p>
 
 </div>
 </div>
@@ -15430,7 +15431,8 @@ This is our second output: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], which indeed is the 
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p><br/></p>
-<h2 id="Question-2">Question 2<a class="anchor-link" href="#Question-2">&#182;</a></h2><p>A student comes to you and says that they used Python to simulate 10 coin tosses and got observed 7 heads and 3 tails. They tell you that something is wrong with Python. Are they correct? Explain in detail.</p>
+<p><span style="color:grey; font-family:Lato; font-size:1.4em;"></p>
+<h2 id="Question-2">Question 2<a class="anchor-link" href="#Question-2">&#182;</a></h2><p><strong>A student comes to you and says that they used Python to simulate 10 coin tosses and got observed 7 heads and 3 tails. They tell you that something is wrong with Python. Are they correct? Explain in detail.</strong></p>
 
 </div>
 </div>
@@ -15443,11 +15445,12 @@ This is our second output: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], which indeed is the 
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <ul>
-<li>They are indeed incorrect, because there is nothing wrong with python in this case where the experiment was simulated only for 10 times.</li>
-<li>Actually, the problem is with the number of simulations being small.</li>
-<li>That the number is greater than 10,000 we would get equal number of heads and equal number of tails.</li>
-<li>Not to mention that equal number should be interpreted as almost equal and there will be some slight deviation in the actual number of heads and tails.</li>
-<li>Moreover, the more we increase of our number of simulations, the more accurate result we can expect.</li>
+<li>They are indeed incorrect, because there is nothing wrong with python, in this case where the experiment was simulated only for 10 iterations.</li>
+<li>Actually, the problem is with the number of simulations, which is 10 in our case, being small.</li>
+<li>That the number is greater than 10,000 we would get somewhat equal number of heads and equal number of tails.</li>
+<li>Not to mention that equal number should be interpreted as almost equal as there will be some slight deviation in the actual number of heads and tails.</li>
+<li>Moreover, the more we increase our number of simulations, the more closer we get to the theoretical values consequently seeing less abnormal deviations from our true values.</li>
+<li>In conclusion, as the number of simulations increase, we see the deviation in our values converge to the theoretical values, which we expect and use while solving problems.</li>
 </ul>
 
 </div>
@@ -15461,7 +15464,19 @@ This is our second output: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], which indeed is the 
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p><br/></p>
-<h2 id="Question-3">Question 3<a class="anchor-link" href="#Question-3">&#182;</a></h2><p>Explain the purpose of <code>continue</code> and <code>break</code> in looping.</p>
+<p><span style="color:grey; font-family:Lato; font-size:1.2em;"></p>
+<h2 id="Question-3">Question 3<a class="anchor-link" href="#Question-3">&#182;</a></h2><p><strong>Explain the purpose of <code>continue</code> and <code>break</code> in looping.</strong></p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <ul>
 <li>Both of them help us gain more control while we are looping and lets us fine tune our needs accordingly where the more formal term to acknowledge both is <em>control statement</em>.</li>
 <li><code>continue</code> will help us skip the part that comes under it, without stopping the execution of the for loop in the middle. For example, if I don't want a specific part in my code to be exectued, I'll make sure I've written <code>continue</code> above it or the code is below <code>continue</code> so that if certain condition meets then we'll <code>continue</code> and not execute the code below it, without hampering the rest of our iterations that are about to take place.</li>
@@ -15646,7 +15661,8 @@ See you again in the next semester
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p><br/></p>
-<h2 id="Question-4">Question 4<a class="anchor-link" href="#Question-4">&#182;</a></h2><p>Assume there is a csv file whose first line is the column headers and the rest of the rows are values. How can you use zip to create a list in which each element is a dictionary whose keys are the column headers and values are the values from the rows? Hint: I am asking you to basically explain the following code that we covered in lecture.</p>
+<p><span style="color:grey; font-family:Lato; font-size:1.4em;"></p>
+<h2 id="Question-4">Question 4<a class="anchor-link" href="#Question-4">&#182;</a></h2><p><strong>Assume there is a csv file whose first line is the column headers and the rest of the rows are values. How can you use zip to create a list in which each element is a dictionary whose keys are the column headers and values are the values from the rows? Hint: I am asking you to basically explain the following code that we covered in lecture.</strong></p>
 <div class="highlight"><pre><span></span><span class="n">filename</span> <span class="o">=</span> <span class="s1">&#39;people.tsv&#39;</span>
 
     <span class="n">students</span> <span class="o">=</span> <span class="p">[]</span>
